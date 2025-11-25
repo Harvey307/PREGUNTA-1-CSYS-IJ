@@ -1,6 +1,4 @@
 import org.example.PasswordValidator;
-// (O el paquete que estés usando)
-
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -38,7 +36,7 @@ public class TestPasswordValidator {
     @Test
     public void testPasswordMuyCorta() {
 
-        assertFalse(PasswordValidator.isValid("nosecura!"));
+        assertFalse(PasswordValidator.isValid("Ab1!"));
     }
 
     @Test
