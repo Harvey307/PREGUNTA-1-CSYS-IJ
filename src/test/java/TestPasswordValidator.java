@@ -11,6 +11,10 @@ public class TestPasswordValidator {
     }
 
     @Test
+    public void testInstanciarClase() {
+        new PasswordValidator();
+    }
+    @Test
     public void testPasswordNula() {
 
         Exception excepcion = assertThrows(IllegalArgumentException.class, () -> {

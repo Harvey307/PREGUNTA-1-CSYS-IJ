@@ -1,7 +1,9 @@
 package org.example;
 
 public class PasswordValidator {
+
     public static boolean isValid(String password) {
+
         // 1. Validar si es nulo o vacío primero (Escenario 1)
         if (password == null || password.isEmpty()) {
             throw new IllegalArgumentException("La contraseña no puede ser nula o vacía");
