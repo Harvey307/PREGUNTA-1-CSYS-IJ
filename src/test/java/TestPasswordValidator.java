@@ -52,6 +52,14 @@ public class TestPasswordValidator {
     }
 
     //test nuevos para completar las ramas logicas
+    @Test
+    public void testPasswordVacio() {
+        // usamos un vacio especificamenta para porbarlo en la clase
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+            PasswordValidator.isValid("");
+        });
+        assertEquals("La contraseña no puede ser nula o vacía", exception.getMessage());
+    }
 
     @Test
     public void testLongitudMuyLarga() {
@@ -76,5 +84,11 @@ public class TestPasswordValidator {
     public void testFaltaMinuscula() {
 
         assertFalse(PasswordValidator.isValid("ABCDEFG1!"));
+    }
+
+    @Test
+    public void testCaracterNoPermitido() {
+       //la ñ no es caracter que colocamos como permitido
+        assertFalse(PasswordValidator.isValid("Abcdef1ñ"));
     }
 }
