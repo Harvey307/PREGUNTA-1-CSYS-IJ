@@ -1,9 +1,9 @@
 import org.example.PasswordValidator;
+// (O el paquete que estés usando)
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.Assert.*;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestPasswordValidator {
     @BeforeAll
