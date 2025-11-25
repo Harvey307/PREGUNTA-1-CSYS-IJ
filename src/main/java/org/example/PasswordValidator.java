@@ -26,7 +26,7 @@ public class PasswordValidator {
         boolean tieneEspecial = false;
 
         // Lista de caracteres especiales permitidos según el examen
-        String especiales = "!@#$%^&*()_-+={}[]|\\:;\"'<>,.?/";
+        String especiales = "!@#$%^&*()_+={}[]|\\:;\"'<>,.?/";
 
         // Recorremos la contraseña carácter por carácter
         for (char c : password.toCharArray()) {

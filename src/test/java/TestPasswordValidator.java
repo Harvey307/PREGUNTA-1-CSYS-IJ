@@ -88,7 +88,7 @@ public class TestPasswordValidator {
 
     @Test
     public void testCaracterNoPermitido() {
-       //la ñ no es caracter que colocamos como permitido
-        assertFalse(PasswordValidator.isValid("Abcdef1ñ"));
+       //No coloque el "-" como caracter permitido
+        assertFalse(PasswordValidator.isValid("Abcdef1-"));
     }
 }
