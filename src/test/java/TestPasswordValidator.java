@@ -51,7 +51,8 @@ public class TestPasswordValidator {
         assertFalse(PasswordValidator.isValid("abcdefghi"));
     }
 
-    //test nuevos para completar las ramas logicas
+    //Test nuevos para completar las ramas logicas
+
     @Test
     public void testPasswordVacio() {
         // usamos un vacio especificamenta para porbarlo en la clase
@@ -91,4 +92,5 @@ public class TestPasswordValidator {
        //No coloque el "-" como caracter permitido
         assertFalse(PasswordValidator.isValid("Abcdef1-"));
     }
+    //comentario
 }
